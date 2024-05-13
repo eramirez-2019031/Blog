@@ -7,19 +7,18 @@ import { postPublicacion, putPublicacion, addComment, getAllPostsWithComments } 
 const router = Router();
 
 router.post('/', [
-    validarJWT,
     validarCampos,
     postPublicacion 
 ]);
 
 router.put('/:createdAt', [
-    validarJWT,
+    
     validarCampos,
     putPublicacion 
 ]);
 
-router.post('/comment/:userId', [
-    validarJWT,
+router.post('/comment', [
+    
     check('postId', 'El ID del post es requerido').notEmpty(),
     validarCampos
 ], addComment);

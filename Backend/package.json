@@ -1,5 +1,5 @@
 {
-  "name": "gestionOpiniones2019188",
+  "name": "asdasd",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -11,7 +11,7 @@
   "keywords": [
     "ESModule"
   ],
-  "author": "Héctor Javier Rodríguez Cabrera",
+  "author": "Evan Gabriel Ramirez Franco",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",

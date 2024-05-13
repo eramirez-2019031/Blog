@@ -1,0 +1,30 @@
+:root {
+    --azul-principal: #05132e; /* Azul oscuro principal */
+    --azul-claro: #1d6fa5; /* Azul claro */
+    --azul-medio: #0b355f; /* Azul medio */
+    --azul-oscuro: #02070e; /* Azul oscuro */
+    --blanco: #ffffff; /* Blanco */
+}
+
+body {
+    background-color: var(--azul-principal);
+    color: var(--blanco);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--azul-medio); /* Cambiado a azul medio */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.botones-tarjeta button {
+    margin-right: 10px; 
+}
+
+
+

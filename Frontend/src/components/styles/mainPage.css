@@ -1,0 +1,154 @@
+/* Reset CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Variables de color */
+:root {
+	--color-primary: #0a3d62;
+	--color-secondary: #3c6382;
+	--color-background: #f0f0f0;
+	--color-title: #222;
+	--color-text: #444;
+	--color-btn-bg: #e17055;
+	--color-btn-text: #fff;
+	--font-primary: 'Roboto', sans-serif;
+}
+
+/* Estilos generales del cuerpo */
+body {
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-family: var(--font-primary);
+	line-height: 1.6;
+	padding-bottom: 80px; /* Agregar espacio para el footer */
+	position: relative; /* Establecer posición relativa para footer absoluto */
+	min-height: 100vh; /* Hacer que el cuerpo ocupe el 100% de la altura de la ventana */
+}
+
+/* Estilos del título */
+.title {
+	text-align: center;
+	margin: 50px 0;
+}
+
+.title h1 {
+	font-size: 36px;
+	color: var(--color-primary);
+}
+
+.title span {
+	color: var(--color-secondary);
+	font-weight: bold;
+}
+
+.title img {
+	display: block;
+	margin: 0 auto 25px;
+	max-width: 100%;
+}
+
+/* Estilos de la lista de artículos */
+.article-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 25px;
+	padding: 0 15px;
+}
+
+/* Contenedor de artículo */
+.article-container {
+	width: calc(50% - 15px);
+	max-width: 400px;
+	padding: 15px;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+}
+
+.article-container:hover {
+	transform: translateY(-5px);
+}
+
+.article-container h2 {
+	color: var(--color-title);
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+/* Contenedor de imagen */
+.img-container {
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.img-container img {
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease;
+}
+
+.img-container img:hover {
+	transform: scale(1.05);
+}
+
+/* Cuerpo del artículo */
+.article-body {
+	margin-top: 20px;
+}
+
+.article-container p {
+	font-size: 16px;
+	color: var(--color-text);
+	line-height: 1.6;
+}
+
+/* Pie de artículo */
+.article-footer {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.article-footer span {
+	font-size: 14px;
+	color: #999;
+}
+
+/* Categorías */
+.categories {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.btn-category {
+	padding: 12px 25px;
+	border: none;
+	margin: 5px;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: var(--color-primary);
+	color: var(--color-btn-text);
+	font-weight: bold;
+	font-size: 16px;
+	transition: background-color 0.3s ease;
+}
+
+.btn-category:hover {
+	background-color: var(--color-secondary);
+}
+
+/* Estilos del footer */
+.footer-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--color-secondary);
+	color: #fff;
+	padding: 30px 0;
+	text-align: center;
+}

@@ -8,7 +8,7 @@ export const postPublicacion = async (req, res) => {
             titulo,
             categoria,
             descripcion,
-            user: req.usuario._id
+
         });
         await post.save();
         res.status(201).json({
@@ -34,11 +34,7 @@ export const putPublicacion = async (req, res) => {
                 msg: 'Publicación no encontrada',
             });
         }
-        if (post.user.toString() !== req.usuario._id.toString()) {
-            return res.status(403).json({
-                msg: 'No puedes editar esta publicación',
-            });
-        }
+        
 
         post.titulo = titulo;
         post.categoria = categoria;
@@ -59,12 +55,10 @@ export const putPublicacion = async (req, res) => {
 
 export const addComment = async (req, res) => {
     try {
-        const { userId } = req.params;
         const { postId, titulo, descripcion } = req.body; // Agrega título y descripción desde el cuerpo de la solicitud
 
         // Crea un nuevo comentario utilizando el modelo userHasComment
         const nuevoComentario = new userHasComment({
-            user: userId,
             post: postId,
             titulo: titulo, // Asigna el título proporcionado
             descripcion: descripcion // Asigna la descripción proporcionada

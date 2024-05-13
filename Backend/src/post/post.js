@@ -13,10 +13,7 @@ const postSchema = new mongoose.Schema({
         type: String,
         required: [true, 'No puede publicar sin texto']
     },
-    user: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-    }],
+    
     estado: {
         type: Boolean,
         default: true
