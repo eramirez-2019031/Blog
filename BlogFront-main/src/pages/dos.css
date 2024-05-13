@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif; /* Fuente predeterminada */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  background-color: #f2f2f2; /* Color de fondo */
+  border: 2px solid #bbb; /* Borde */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  max-width: 800px; /* Ancho máximo */
+  margin: 20px auto; /* Centrar horizontalmente */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilos para los títulos */
+.title-1, .title-category-class, .Contenedor-categorias {
+  font-size: 1.8rem; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #0056b3; /* Color del texto */
+  text-align: center; /* Alineación centrada del texto */
+  margin-bottom: 20px; /* Margen inferior */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: background-color 0.3s, color 0.3s; /* Transición de color */
+}
+
+.title-1:hover, .title-category-class:hover {
+  background-color: #007bff; /* Cambio de color al pasar el ratón */
+  color: #fff; /* Cambio de color del texto al pasar el ratón */
+}
+
+/* Estilos para los subtítulos */
+.project-name {
+  font-size: 1.3rem; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #333; /* Color del texto */
+  margin-bottom: 10px; /* Margen inferior */
+  text-align: center; /* Alineación centrada del texto */
+}
+
+/* Estilos para la descripción */
+.description-project, .text-description {
+  font-size: 1.2rem; /* Tamaño de fuente */
+  color: #555; /* Color del texto */
+  line-height: 1.6; /* Altura de línea */
+  text-align: justify; /* Alineación justificada */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para la imagen */
+.project-image {
+  display: block; /* Convertir en elemento de bloque */
+  margin: 0 auto; /* Centrar horizontalmente */
+  width: 100%; /* Ancho completo */
+  max-height: 300px; /* Altura máxima */
+  object-fit: cover; /* Ajustar imagen al contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilos para los botones */
+.Get-project button, .lista-categorias li a {
+  display: block; /* Convertir en elemento de bloque */
+  background-color: #007bff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-decoration: none; /* Quitar subrayado */
+  border: none; /* Quitar borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  margin: 20px auto 10px; /* Margen centrado verticalmente y margen externo horizontal automático */
+  width: 80%; /* Ancho del botón/enlace */
+  text-align: center; /* Alineación centrada del texto */
+  transition: background-color 0.3s; /* Transición de color */
+}
+
+.Get-project button:hover, .lista-categorias li a:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}

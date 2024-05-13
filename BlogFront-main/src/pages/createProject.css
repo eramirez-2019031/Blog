@@ -1,0 +1,96 @@
+/* createProject.css */
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Estilos para el contenido del formulario */
+.form-content {
+  background-color: #f4f7f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Estilos para el título del formulario */
+.form-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4e7cff;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los elementos del formulario */
+.form-item {
+  margin-bottom: 25px;
+}
+
+/* Estilos para la etiqueta del formulario */
+.form-label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Estilos para el campo de entrada del formulario */
+.form-input {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  font-size: 1.2rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+/* Estilos para el mensaje de error del formulario */
+.form-error {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+}
+
+/* Estilos para el botón de enviar del formulario */
+.form-submit {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  background-color: #4e7cff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #355ac8;
+}
+
+/* Estilos para la información adicional del formulario */
+.form-info {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Estilos para el enlace del formulario */
+.form-link {
+  color: #4e7cff;
+  text-decoration: none;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}

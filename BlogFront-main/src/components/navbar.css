@@ -1,0 +1,184 @@
+/* Navbar Container */
+nav {
+  background-color: #1f2937;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Inner Container */
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar Logo */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f9a8d4;
+}
+
+/* Navbar Menu Items */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #6d28d9;
+  position: relative;
+}
+
+nav ul li a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a::before,
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li a::before {
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1));
+}
+
+nav ul li a::after {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+  opacity: 1;
+}
+
+/* Navbar Toggle Button */
+nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+nav button:hover {
+  transform: scale(1.1);
+}
+
+/* Navbar Overlay */
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+}
+
+/* Navbar Sidebar */
+.navbar-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 230px;
+  background-color: #4c51bf;
+  padding-top: 50px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.navbar-sidebar.active {
+  transform: translateX(0);
+}
+
+.navbar-sidebar ul li {
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-sidebar ul li:hover {
+  transform: translateY(-3px);
+}
+
+.navbar-sidebar ul li:last-child {
+  margin-bottom: 100px;
+}
+
+.navbar-sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-sidebar ul li a:hover {
+  color: #f9a8d4;
+}
+
+/* Media Query for Responsive Navbar */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    display: block;
+  }
+
+  .navbar-overlay {
+    display: block;
+  }
+
+  .navbar-sidebar {
+    padding-top: 20px;
+  }
+}
+
+/* Estilos para la imagen del logotipo */
+nav img {
+  width: 100px; /* Ancho deseado */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 20px; /* Espacio entre el logotipo y los elementos de navegación */
+}
+

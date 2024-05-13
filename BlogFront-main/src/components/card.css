@@ -1,0 +1,109 @@
+/* Estilos generales */
+.big-container {
+  background-color: #fffaee; /* Color de fondo original */
+  border-radius: 20px; /* Borde más redondeado */
+  border: 2px dashed #0d8686; /* Borde punteado original */
+  box-shadow: 0px 8px 12px rgba(255, 255, 255, 0.2); /* Sombra con color invertido original */
+  padding: 15px; /* Espaciado interno reducido */
+  margin-bottom: 25px; /* Margen inferior aumentado */
+  position: relative; /* Cambio de posición */
+}
+
+
+/* Estilo para la línea a la izquierda */
+.big-container::before {
+    content: ' '; /* Nuevo contenido del pseudo-elemento */
+    position: absolute; /* Posicionamiento relativo */
+    top: -5px; /* Desde la parte superior con desplazamiento hacia arriba */
+    left: -10px; /* A la izquierda con desplazamiento hacia la izquierda */
+    width: 10px; /* Ancho aumentado */
+    height: 120%; /* Altura más grande */
+    background-color: #3b82f6; /* Nuevo color de fondo azul oscuro */
+    border-top-left-radius: 25px; /* Borde redondeado superior izquierdo más grande */
+    border-bottom-left-radius: 25px; /* Borde redondeado inferior izquierdo más grande */
+    z-index: -1; /* Z-index negativo para estar detrás del contenido */
+  }
+  
+
+  
+  /* Estilos para el nombre del autor */
+  .author-1 {
+    margin-bottom: 20px; /* Margen inferior aumentado */
+  }
+  
+  .author-2 {
+    margin-bottom: 8px; /* Margen inferior reducido */
+  }
+  
+  .author-3 {
+    font-weight: normal; /* Peso de la fuente cambiado */
+    color: #22d3ee; /* Nuevo color de texto celeste */
+    cursor: pointer; /* Cursor cambiado a apuntador */
+    border-bottom: 2px dotted #22d3ee; /* Línea punteada celeste */
+    display: inline; /* Cambio a display inline */
+    padding-bottom: 5px; /* Espaciado inferior aumentado */
+  }
+  
+  /* Estilos para el título */
+  .title-home {
+    font-size: 1.5rem; /* Tamaño de fuente aumentado */
+    font-weight: bold; /* Negrita */
+    color: #3b82f6; /* Nuevo color de texto azul oscuro */
+    text-decoration: underline; /* Subrayado */
+    transition: color 0.5s; /* Transición más lenta */
+    margin-bottom: 15px; /* Margen inferior aumentado */
+    display: inline-block; /* Cambio a display inline-block */
+  }
+  
+  .title-home:hover {
+    color: #10b981; /* Nuevo color de texto verde al pasar el mouse */
+  }
+  
+  /* Estilos para la descripción */
+  .desc {
+    color: #6b7280; /* Nuevo color de texto gris claro */
+    margin-bottom: 15px; /* Margen inferior aumentado */
+    text-align: center; /* Alineación centrada */
+  }
+  
+  /* Estilos para la fecha */
+  .when {
+    display: block; /* Cambio a display block */
+    justify-content: center; /* Alineación centrada */
+    align-items: center; /* Alineación centrada */
+  }
+  
+  .onDate {
+    font-size: 1rem; /* Tamaño de fuente aumentado */
+    color: #4a5568; /* Color de texto original */
+    margin-top: 10px; /* Margen superior aumentado */
+  }
+  
+  /* Estilos para el botón de eliminar */
+  .delete-button {
+    background-color: #f9fafb; /* Nuevo color de fondo gris claro */
+    border: 2px solid #f9fafb; /* Borde gris claro */
+    border-radius: 10px; /* Borde más redondeado */
+    color: #6b7280; /* Texto gris claro */
+    font-size: 1.2rem; /* Tamaño de fuente aumentado */
+    padding: 10px 25px; /* Espaciado interno aumentado */
+    cursor: pointer; /* Cursor puntero */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+    outline: none; /* Elimina el contorno */
+  }
+  
+  
+  .delete-button:hover {
+    background-color: #e5e7eb; /* Nuevo color de fondo gris claro al pasar el mouse */
+    border-color: #e5e7eb; /* Nuevo color de borde gris claro al pasar el mouse */
+  }
+  
+  .delete-button:focus {
+    outline: none; /* Elimina el contorno */
+  }
+  
+  /* Estilos para el icono de eliminar */
+  .delete-icon {
+    vertical-align: middle; /* Alineación vertical al medio */
+    margin-right: 5px; /* Margen derecho añadido */
+  }

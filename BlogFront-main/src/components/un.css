@@ -1,0 +1,65 @@
+/* styles.css */
+
+/* Estilos para el contenedor principal */
+.section {
+    background-color: #1a202c; /* Color de fondo */
+    padding: 50px; /* Espaciado interno */
+    border-radius: 20px; /* Borde redondeado */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilos para el contenedor máximo de ancho */
+.max-w-container {
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar */
+}
+
+/* Estilos para el título */
+.title {
+    font-size: 3rem; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    color: #d3d4d9; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+    text-align: center; /* Alineación del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+    background-image: linear-gradient(to right, #805ad5, #d53f8c); /* Degradado de fondo */
+    transition: transform 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.title:hover {
+    color: #f5f5f5; /* Cambio de color al pasar el mouse */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilos para el subtítulo */
+.subtitle {
+    font-size: 1.5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+    color: #cbd5e0; /* Color del texto */
+    margin-bottom: 30px; /* Espacio inferior */
+    text-align: center; /* Alineación del texto */
+    transition: transform 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.subtitle:hover {
+    color: #f5f5f5; /* Cambio de color al pasar el mouse */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+/* Estilos para el botón */
+.button {
+    display: inline-block; /* Mostrar como bloque en línea */
+    background-color: #48bb78; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border-radius: 50px; /* Borde redondeado */
+    text-decoration: none; /* Quitar subrayado del texto */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.button:hover {
+    background-color: #38a169; /* Cambiar color de fondo al pasar el mouse */
+    transform: translateY(-3px); /* Desplazamiento hacia arriba al pasar el mouse */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra al pasar el mouse */
+}

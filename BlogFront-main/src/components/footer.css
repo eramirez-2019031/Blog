@@ -1,0 +1,47 @@
+/* Estilos generales del footer */
+.big-footer {
+    background-color: #05276b; /* Color de fondo */
+    padding: 5px; /* Espacio interno */
+    text-align: center; /* Alineación del texto al centro */
+    position: fixed; /* Posición fija */
+    left: 0; /* Alineación a la izquierda */
+    bottom: 0; /* Alineación en la parte inferior */
+    width: 100%; /* Ancho completo */
+    font-size: 14px; /* Tamaño de fuente */
+    color: #4a5568; /* Color del texto */
+    z-index: 1000; /* Z-index para asegurar que esté encima de otros elementos */
+  }
+
+  /* Estilos para el texto de derechos de autor */
+/* Estilos para el texto de derechos de autor */
+.my-5 {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #4a5568; /* Color del texto */
+    margin-top: 20px; /* Margen superior */
+    margin-bottom: 20px; /* Margen inferior */
+    text-align: center; /* Alineación al centro */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    padding: 1px; /* Relleno interno */
+    background-color: #b5cbff; /* Color de fondo */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  }
+  
+/* Estilos para el botón en el footer */
+.big-footer button {
+    background-color: #673ab7; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Elimina el borde del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Radio de borde del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+  }
+  
+  .big-footer button:hover {
+    background-color: #5a2d8e; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+  }
+  
+  
