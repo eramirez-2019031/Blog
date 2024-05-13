@@ -30,6 +30,7 @@ export const PostDetails = () => {
                                 <h2 className="text-4xl font-bold mt-4 mb-2">{project.title}</h2>
                                 <p className="text-description">{project.description}</p>
                                 <a href={project.code} className="Get-project"><Button> Obtener Proyecto</Button></a>
+                                <a href={project.code} className="Get-project"><Button> Obtener Proyecto</Button></a>
                             </>
                         )}
                     </div>
